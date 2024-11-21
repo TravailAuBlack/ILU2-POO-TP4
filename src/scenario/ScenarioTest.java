@@ -5,6 +5,7 @@ import produit.Poisson;
 import produit.Produit;
 import produit.Sanglier;
 import produit.Unites;
+import villageGaulois.lEtal;
 
 public class ScenarioTest {
 	public static void main(String[] args) {
@@ -18,5 +19,7 @@ public class ScenarioTest {
 			produit[i].decrireProduit();
 		}
 		
+		
+		lEtal<Produit>[] marche = new lEtal[3];
 	}
 }

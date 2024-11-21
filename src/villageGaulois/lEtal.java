@@ -1,8 +1,9 @@
 package villageGaulois;
 
 import personnages.Gaulois;
+import produit.Produit;
 
-public interface lEtal {
+public interface lEtal<P extends Produit> {
 
 	boolean isEtalOccupe();
 
