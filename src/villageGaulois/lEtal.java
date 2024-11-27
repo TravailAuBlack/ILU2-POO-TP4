@@ -3,7 +3,7 @@ package villageGaulois;
 import personnages.Gaulois;
 import produit.Produit;
 
-public interface lEtal<P extends Produit> {
+public interface lEtal{
 
 	boolean isEtalOccupe();
 
@@ -13,9 +13,9 @@ public interface lEtal<P extends Produit> {
 
 	String getProduit();
 
-	void occuperEtal(Gaulois vendeur, String produit, int quantite);
+	void occuperEtal(Gaulois vendeur, produit.Produit produit, int quantite);
 
-	boolean contientProduit(String produit);
+	boolean contientProduit(produit.Produit produit);
 
 	int acheterProduit(int quantiteAcheter);
 
@@ -38,5 +38,6 @@ public interface lEtal<P extends Produit> {
 	 *         quantité de produit vendu
 	 */
 	String[] etatEtal();
+
 
 }

@@ -1,8 +1,9 @@
 package villageGaulois;
 
 import personnages.Gaulois;
+import produit.Produit;
 
-public class Etal implements lEtal {
+public class Etal implements lEtal s<Produit> {
 	private Gaulois vendeur;
 	private String produit;
 	private int quantiteDebutMarche;
@@ -30,16 +31,16 @@ public class Etal implements lEtal {
 	}
 
 	@Override
-	public void occuperEtal(Gaulois vendeur, String produit, int quantite) {
+	public void occuperEtal(Gaulois vendeur, Produit produit, int quantite) {
 		this.vendeur = vendeur;
-		this.produit = produit;
+		this.produit =(P)produit;
 		this.quantite = quantite;
 		quantiteDebutMarche = quantite;
 		etalOccupe = true;
 	}
 
 	@Override
-	public boolean contientProduit(String produit) {
+	public boolean contientProduit(Produit produit) {
 		return this.produit.equals(produit);
 	}
 

@@ -16,7 +16,8 @@ public class Poisson extends Produit{
 	
 	@Override
 	public String decrireProduit() {
-		return nom + "péches " + getDate() + " .\n"; 
+		System.out.println( nom + " peches " + getDate() + " .\n");
+		return nom;
 	}
 	
 }

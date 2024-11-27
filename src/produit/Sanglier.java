@@ -15,21 +15,20 @@ public class Sanglier extends Produit {
 		
 	}
 	
-	public String getNom() {
-		return "sanglier";
+	public String toString() {
+		return nom;
 	}
 	
 	public int getPoids() {
 		return poids;
 	}
 	
-	public Gaulois getGaulois() {
-		return gaulois;
-	}
+
 
 	@Override
 	public String decrireProduit() {
-		return nom + "de " + getPoids() +  unite + "chasse par " + getGaulois() + ".\n";                                         
+		System.out.println( nom + " de " + getPoids() +" "+  unite +" "+ "chasse par " + gaulois.getNom() + ".\n");   
+		return nom;
 	}
 	
 
